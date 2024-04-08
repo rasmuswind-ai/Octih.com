@@ -1,19 +1,19 @@
-/*-------------------- Google Fonts --------------------*/
+/*-------------------- GOOGLE FONTS --------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-/*-------------------- Variable CSS --------------------*/
+/*-------------------- VARIABLE CSS --------------------*/
 :root {
     --header-height: 3rem;
 
-    /*-------------------- Colors --------------------*/
+    /*-------------------- COLORS --------------------*/
     --bg-color: rgb(241, 241, 241);
     --scroll-bar-color: hsla(300, 6.98%, 83.14%, 1);
 
-    /*-------------------- Font and Typography --------------------*/
+    /*-------------------- FONT AND TYPOGRAHPY --------------------*/
     --body-font: "Montserrat", sans-serif;
 }
 
-/*-------------------- Base --------------------*/
+/*-------------------- BASE --------------------*/
 * {
     box-sizing: border-box;
     padding: 0;
@@ -43,13 +43,18 @@ a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .button--flex{
     display: inline-flex;
     align-items: center;
 }
 
 
-/*-------------------- Reusable CSS --------------------*/
+/*-------------------- REUSABLE CSS --------------------*/
 .section {
     padding: 6rem 0 2rem;
 }
@@ -60,7 +65,7 @@ a {
     margin-right: auto;
   }
 
-/*-------------------- Nav --------------------*/
+/*-------------------- NAV --------------------*/
 .nav {
     position: fixed;
     top: 0;
@@ -108,7 +113,7 @@ a {
     width: 40px;
 }
 
-/*-------------------- Home --------------------*/
+/*-------------------- HOME --------------------*/
 .home-content {
     padding-top: 12rem;
     display: flex;
@@ -148,7 +153,7 @@ a {
     margin-right: 15px;
 }
 
-/*-------------------- Website --------------------*/
+/*-------------------- WEBSITE --------------------*/
 .website-div {
     display: grid;
     gap: 1.5rem;
@@ -196,7 +201,7 @@ a {
     transition: .3s;
 }
 
-/*-------------------- Ecom --------------------*/
+/*-------------------- ECOM --------------------*/
 .ecom-div {
     display: grid;
     gap: 1.5rem;
@@ -220,31 +225,31 @@ a {
     color: rgb(110, 110, 110);
 }
 
-.ecom-button-div {
+.ecom-button-div:hover .ecom-button-icon{
+    transform: translateX(.25rem);
+}
+
+.ecom-button{
     margin-top: 2.5rem;
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--bg-color);
+    color: rgb(110, 110, 110);
     box-shadow: 0px 0px 10px #00000034;
     padding: .9rem;
     border-radius: 20px;
     cursor: pointer;
 }
 
-.ecom-button {
-    color: rgb(110, 110, 110);
-}
-
-.button-icon {
-    font-size: 1.5rem;
+.ecom-button-icon{
+    font-size: 1.25rem;
     margin-left: .5rem;
+    transition: .3s;
 }
 
-.ecom-button-div:hover {
-    
-}
+/*-------------------- ABOUT --------------------*/
 
 /*-------------------- SCROLLBAR --------------------*/
 ::-webkit-scrollbar {
