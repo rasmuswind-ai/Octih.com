@@ -6,7 +6,7 @@
     --header-height: 3rem;
 
     /*-------------------- Colors --------------------*/
-    --bg-color: hsla(300, 33.33%, 95.88%, 1);
+    --bg-color: rgb(241, 241, 241);
     --scroll-bar-color: hsla(300, 6.98%, 83.14%, 1);
 
     /*-------------------- Font and Typography --------------------*/
@@ -43,16 +43,15 @@ a {
     text-decoration: none;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+.button--flex{
+    display: inline-flex;
+    align-items: center;
 }
-
 
 
 /*-------------------- Reusable CSS --------------------*/
 .section {
-    padding: 2rem 0 4rem;
+    padding: 6rem 0 2rem;
 }
 
 .container {
@@ -84,7 +83,7 @@ img {
     width: 510px;
     justify-content: center;
     align-items: center;
-    background-color: var(--bg-color);
+    background-color: hsla(300, 33.33%, 97.88%, 1);
     box-shadow: 5px 2px 20px #0000001a;
     border-radius: 30px;
 }
@@ -100,7 +99,7 @@ img {
 
 .nav-links-item.active {
     border-radius: 30px;
-    box-shadow: 5px 2px 20px #0000001a;
+    box-shadow: 0px 0px 10px #00000033;
     padding: 10px 20px;
 }
 
@@ -109,7 +108,7 @@ img {
     width: 40px;
 }
 
-/*-------------------- Nav --------------------*/
+/*-------------------- Home --------------------*/
 .home-content {
     padding-top: 12rem;
     display: flex;
@@ -138,7 +137,133 @@ img {
     -webkit-text-fill-color: transparent;
 }
 
+.home-container p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10rem;
+}
 
 .home-container i {
     margin-right: 15px;
 }
+
+/*-------------------- Website --------------------*/
+.website-div {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    background-color:  rgb(231, 231, 231);
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #00000034;
+}
+
+.website-title {
+    font-size: 35px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 2rem;
+}
+
+.website-subtitle {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(110, 110, 110);
+}
+
+.website-button-div:hover .website-button-icon{
+    transform: translateX(.25rem);
+}
+
+.website-button{
+    margin-top: 2.5rem;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+    color: rgb(110, 110, 110);
+    box-shadow: 0px 0px 10px #00000034;
+    padding: .9rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.website-button-icon{
+    font-size: 1.25rem;
+    margin-left: .5rem;
+    transition: .3s;
+}
+
+/*-------------------- Ecom --------------------*/
+.ecom-div {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    background-color:  rgb(231, 231, 231);
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #00000034;
+}
+
+.ecom-title {
+    font-size: 35px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 2rem;
+}
+
+.ecom-subtitle {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(110, 110, 110);
+}
+
+.ecom-button-div {
+    margin-top: 2.5rem;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+    box-shadow: 0px 0px 10px #00000034;
+    padding: .9rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.ecom-button {
+    color: rgb(110, 110, 110);
+}
+
+.button-icon {
+    font-size: 1.5rem;
+    margin-left: .5rem;
+}
+
+.ecom-button-div:hover {
+    
+}
+
+/*-------------------- SCROLLBAR --------------------*/
+::-webkit-scrollbar {
+    width: 17px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #c9c9c9;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+    transition: background-color 1s ease;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #858585;
+    cursor: pointer;
+  }
